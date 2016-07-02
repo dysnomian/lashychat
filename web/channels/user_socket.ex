@@ -1,10 +1,11 @@
-defmodule Neikos.UserSocket do
+defmodule Lashychat.UserSocket do
   use Phoenix.Socket
 
-  alias Neikos.{GuardianSerializer}
+  alias Lashychat.{GuardianSerializer}
 
   # Channels
-  channel "users:*", Neikos.UserChannel
+  channel "users:*", Lashychat.UserChannel
+  channel "rooms:*", Lashychat.RoomChannel
 
   # Transports
   transport :websocket, Phoenix.Transports.WebSocket

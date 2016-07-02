@@ -1,5 +1,5 @@
-defmodule Neikos.ErrorView do
-  use Neikos.Web, :view
+defmodule Lashychat.ErrorView do
+  use Lashychat.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

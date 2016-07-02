@@ -1,5 +1,5 @@
-defmodule Neikos.RegistrationView do
-  use Neikos.Web, :view
+defmodule Lashychat.RegistrationView do
+  use Lashychat.Web, :view
 
   def render("error.json", %{changeset: changeset}) do
     errors = Enum.map(changeset.errors, fn {field, detail} ->

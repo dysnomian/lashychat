@@ -6,12 +6,12 @@
 use Mix.Config
 
 # Configures the endpoint
-config :neikos, Neikos.Endpoint,
+config :lashychat, Lashychat.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "fwhgWA/EEgRzxIZuGabA7q+HWvDqgQvQqTHGK99X4H6nL0vUl19Hjv2/+VgWGUhQ",
   render_errors: [accepts: ~w(html json)],
-  pubsub: [name: Neikos.PubSub,
+  pubsub: [name: Lashychat.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
@@ -30,7 +30,7 @@ config :phoenix, :generators,
 
 # Configure guardian
 config :guardian, Guardian,
-  issuer: "Neikos",
+  issuer: "Lashychat",
   ttl: { 3, :days },
   verify_issuer: true,
-  serializer: Neikos.GuardianSerializer
+  serializer: Lashychat.GuardianSerializer

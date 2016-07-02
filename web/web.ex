@@ -1,12 +1,12 @@
-defmodule Neikos.Web do
+defmodule Lashychat.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use Neikos.Web, :controller
-      use Neikos.Web, :view
+      use Lashychat.Web, :controller
+      use Lashychat.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule Neikos.Web do
     quote do
       use Phoenix.Controller
 
-      alias Neikos.Repo
+      alias Lashychat.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import Neikos.Router.Helpers
-      import Neikos.Gettext
+      import Lashychat.Router.Helpers
+      import Lashychat.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule Neikos.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Neikos.Router.Helpers
-      import Neikos.ErrorHelpers
-      import Neikos.Gettext
+      import Lashychat.Router.Helpers
+      import Lashychat.ErrorHelpers
+      import Lashychat.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule Neikos.Web do
     quote do
       use Phoenix.Channel
 
-      alias Neikos.Repo
+      alias Lashychat.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
-      import Neikos.Gettext
+      import Lashychat.Gettext
     end
   end
 

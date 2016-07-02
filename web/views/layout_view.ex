@@ -1,3 +1,3 @@
-defmodule Neikos.LayoutView do
-  use Neikos.Web, :view
+defmodule Lashychat.LayoutView do
+  use Lashychat.Web, :view
 end

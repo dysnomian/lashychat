@@ -1,7 +1,7 @@
 {
-  "name": "neikos",
+  "name": "lashychat",
   "version": "1.0.0",
-  "description": "A Phoenix/React/Redux/Bourbon template.",
+  "description": "A new chat system for RP",
   "main": "brunch-config.js",
   "directories": {
     "test": "test"
@@ -45,7 +45,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dysnomian/neikos.git"
+    "url": "git://github.com/dysnomian/lashychat.git"
   },
   "keywords": [
     "react",
@@ -60,7 +60,7 @@
   "author": "Liss McCabe",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dysnomian/neikos/issues"
+    "url": "https://github.com/dysnomian/lashychat/issues"
   },
-  "homepage": "https://github.com/dysnomian/neikos#readme"
+  "homepage": "https://lashychat.github.com"
 }

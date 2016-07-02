@@ -1,3 +1,3 @@
-defmodule Neikos.LayoutViewTest do
-  use Neikos.ConnCase, async: true
+defmodule Lashychat.LayoutViewTest do
+  use Lashychat.ConnCase, async: true
 end

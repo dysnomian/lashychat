@@ -1,5 +1,5 @@
-defmodule Neikos.Router do
-  use Neikos.Web, :router
+defmodule Lashychat.Router do
+  use Lashychat.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -15,7 +15,7 @@ defmodule Neikos.Router do
     plug Guardian.Plug.LoadResource
   end
 
-  scope "/api", Neikos do
+  scope "/api", Lashychat do
     pipe_through :api
 
     scope "/v1" do
@@ -28,7 +28,7 @@ defmodule Neikos.Router do
     end
   end
 
-  scope "/", Neikos do
+  scope "/", Lashychat do
     pipe_through :browser # Use the default browser stack
 
     get "*path", PageController, :index

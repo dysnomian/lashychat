@@ -1,5 +1,5 @@
-defmodule Neikos.UserChannel do
-  use Neikos.Web, :channel
+defmodule Lashychat.UserChannel do
+  use Lashychat.Web, :channel
 
   def join("users:" <> user_id, _params, socket) do
     current_user = socket.assigns.current_user

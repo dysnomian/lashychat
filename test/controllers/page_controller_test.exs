@@ -1,5 +1,5 @@
-defmodule Neikos.PageControllerTest do
-  use Neikos.ConnCase
+defmodule Lashychat.PageControllerTest do
+  use Lashychat.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

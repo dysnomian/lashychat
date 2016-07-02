@@ -1,7 +1,7 @@
-defmodule Neikos.RegistrationController  do
-  use Neikos.Web, :controller
+defmodule Lashychat.RegistrationController  do
+  use Lashychat.Web, :controller
 
-  alias Neikos.{Repo, User}
+  alias Lashychat.{Repo, User}
 
   plug :scrub_params, "user" when action in [:create]
 
@@ -14,7 +14,7 @@ defmodule Neikos.RegistrationController  do
 
         conn
         |> put_status(:created)
-        |> render(Neikos.SessionView, "show.json", jwt: jwt, user: user)
+        |> render(Lashychat.SessionView, "show.json", jwt: jwt, user: user)
 
       {:error, changeset} ->
         conn

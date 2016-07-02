@@ -60,7 +60,7 @@ export function httpDelete(url) {
 }
 
 export function setDocumentTitle(title) {
-  document.title = `${title} | Neikos`;
+  document.title = `${title} | Lashychat`;
 }
 
 export function renderErrorsFor(errors, ref) {

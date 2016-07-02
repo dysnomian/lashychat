@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="liss@eristiccode.com">
 
-    <title>Hello | Neikos</title>
+    <title>Hello | Lashychat</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 

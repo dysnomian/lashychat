@@ -1,14 +1,14 @@
-defmodule Neikos.Endpoint do
-  use Phoenix.Endpoint, otp_app: :neikos
+defmodule Lashychat.Endpoint do
+  use Phoenix.Endpoint, otp_app: :lashychat
 
-  socket "/socket", Neikos.UserSocket
+  socket "/socket", Lashychat.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :neikos, gzip: false,
+    at: "/", from: :lashychat, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -32,8 +32,8 @@ defmodule Neikos.Endpoint do
 
   plug Plug.Session,
     store: :cookie,
-    key: "_neikos_key",
+    key: "_lashychat_key",
     signing_salt: "0NfPCK+m"
 
-  plug Neikos.Router
+  plug Lashychat.Router
 end

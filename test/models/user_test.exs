@@ -1,7 +1,7 @@
-defmodule Neikos.UserTest do
-  use Neikos.ModelCase
+defmodule Lashychat.UserTest do
+  use Lashychat.ModelCase
 
-  alias Neikos.User
+  alias Lashychat.User
 
   @valid_attrs %{crypted_password: "some content", email: "some content", first_name: "some content", last_name: "some content"}
   @invalid_attrs %{}

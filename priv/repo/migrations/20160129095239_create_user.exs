@@ -1,4 +1,4 @@
-defmodule Neikos.Repo.Migrations.CreateUser do
+defmodule Lashychat.Repo.Migrations.CreateUser do
   use Ecto.Migration
 
   def change do

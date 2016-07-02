@@ -1,5 +1,5 @@
-defmodule Neikos.User do
-  use Neikos.Web, :model
+defmodule Lashychat.User do
+  use Lashychat.Web, :model
 
   @derive {Poison.Encoder, only: [:id, :first_name, :last_name, :email]}
 

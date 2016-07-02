@@ -1,5 +1,5 @@
-defmodule Neikos.Session do
-  alias Neikos.{Repo, User}
+defmodule Lashychat.Session do
+  alias Lashychat.{Repo, User}
 
   def authenticate(%{"email" => email, "password" => password}) do
     user = Repo.get_by(User, email: String.downcase(email))

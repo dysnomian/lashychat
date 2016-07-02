@@ -1,7 +1,7 @@
-defmodule Neikos.CurrentUserController do
-  use Neikos.Web, :controller
+defmodule Lashychat.CurrentUserController do
+  use Lashychat.Web, :controller
 
-  plug Guardian.Plug.EnsureAuthenticated, handler: Neikos.SessionController
+  plug Guardian.Plug.EnsureAuthenticated, handler: Lashychat.SessionController
 
   def show(conn, _) do
     user = Guardian.Plug.current_resource(conn)

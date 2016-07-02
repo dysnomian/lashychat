@@ -1,5 +1,5 @@
-defmodule Neikos.PageController do
-  use Neikos.Web, :controller
+defmodule Lashychat.PageController do
+  use Lashychat.Web, :controller
 
   def index(conn, _params) do
     render conn, "index.html"

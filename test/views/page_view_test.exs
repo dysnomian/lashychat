@@ -1,3 +1,3 @@
-defmodule Neikos.PageViewTest do
-  use Neikos.ConnCase, async: true
+defmodule Lashychat.PageViewTest do
+  use Lashychat.ConnCase, async: true
 end

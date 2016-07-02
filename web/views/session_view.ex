@@ -1,5 +1,5 @@
-defmodule Neikos.SessionView do
-  use Neikos.Web, :view
+defmodule Lashychat.SessionView do
+  use Lashychat.Web, :view
 
   def render("show.json", %{jwt: jwt, user: user}) do
     %{

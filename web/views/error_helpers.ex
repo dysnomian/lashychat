@@ -1,4 +1,4 @@
-defmodule Neikos.ErrorHelpers do
+defmodule Lashychat.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -26,10 +26,10 @@ defmodule Neikos.ErrorHelpers do
     #
     #     dngettext "errors", "1 file", "%{count} files", count
     #
-    Gettext.dngettext(Neikos.Gettext, "errors", msg, msg, opts[:count], opts)
+    Gettext.dngettext(Lashychat.Gettext, "errors", msg, msg, opts[:count], opts)
   end
 
   def translate_error(msg) do
-    Gettext.dgettext(Neikos.Gettext, "errors", msg)
+    Gettext.dgettext(Lashychat.Gettext, "errors", msg)
   end
 end
